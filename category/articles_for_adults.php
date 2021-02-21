@@ -64,8 +64,7 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                   <div class="col">
                     <div class="card shadow-sm">
-                      <img src="../img/<?php $result->data_seek($j);
-                          echo '<h5>' .htmlspecialchars($result->fetch_assoc()['img']) . '</h5><br>'; ?>" width="200">
+                      
 
                       <div class="card-body">
                       <h2 class="card-text"><?php 

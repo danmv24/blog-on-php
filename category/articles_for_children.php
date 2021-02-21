@@ -6,7 +6,7 @@
     <title>Блог</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
-    <link rel="stylesheet" href="../css/style.css">
+
 
 
     
@@ -60,6 +60,7 @@
 
           <div class="album bg-light dec">
               <div class="container">
+
                   <div class="col">
                       <div class="card shadow-sm">
                           <img src="../img/6.jpg" width="200">
@@ -80,6 +81,7 @@
                           </div>
                       </div>
                   </div>
+                </div>
               </div>
           </div>
 

@@ -167,7 +167,7 @@
                 </a>
             </div>
 
-            <div class="container marketing">
+            
 
                         <?php 
                             
@@ -294,9 +294,6 @@
                 <hr class="featurette-divider" />
             </div>
 
-            <footer class="container">
-                <p class="float-end"><a href="#">Back to top</a></p>
-            </footer>
         </main>
 
         <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
