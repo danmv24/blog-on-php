@@ -1,5 +1,5 @@
 <header>
-  <div class="collapse bg-dark" id="navbarHeader">
+  <div class="collapse bg-dark" id="navbarHeader" style="background-size: cover;">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">

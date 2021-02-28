@@ -25,9 +25,9 @@
         for ($j = 0 ; $j < $rows ; ++$j)
         {
             $result->data_seek($j);
-            echo '<h5 id="title">' .htmlspecialchars($result->fetch_assoc()['title']) . '</h5><br>';
+            echo '<h2 style="text-align: center;">' . $result->fetch_assoc()['title'] . '</h2><br>';
             $result->data_seek($j);
-            echo '<p id="text">' .htmlspecialchars($result->fetch_assoc()['text']) . '</p><br>';
+            echo '<p style="font-size:20px; hyphens: auto; margin:10px">' . $result->fetch_assoc()['text'] . '</p><br>';
         }
     
         $result->close();

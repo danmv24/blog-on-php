@@ -11,7 +11,6 @@
 
     
 
-    <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -58,19 +57,19 @@
       {
           ?>
 
-          <div class="album bg-light dec">
+          <div class="album bg-light dec" style="padding: 10px">
               <div class="container">
 
                   <div class="col">
                       <div class="card shadow-sm">
-                          <img src="../img/6.jpg" width="200">
+                          
 
                           <div class="card-body">
-                          <h2 class="card-text"><?php 
+                          <h2 class="card-text" style="justify-content: center;"><?php 
                           $result->data_seek($j);
-                          echo '<h5>' .htmlspecialchars($result->fetch_assoc()['title']) . '</h5><br>'; 
+                          echo '<h2 style="text-align: center;">' . $result->fetch_assoc()['title'] . '</h2><br>'; 
                           $result->data_seek($j);
-                          echo '<p>' .htmlspecialchars($result->fetch_assoc()['description']) . '</p><br>';?></h2>
+                          echo '<p>' . $result->fetch_assoc()['description'] . '</p><br>';?></h2>
                           <div class="d-flex justify-content-between align-items-center">
                               <div class="btn-group">
                               <a class="btn btn-secondary" href="article_ch.php?id=<?php

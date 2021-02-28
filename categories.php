@@ -9,7 +9,7 @@
 
     
 
-    <!-- Bootstrap core CSS -->
+
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -54,22 +54,22 @@
                 </p>
               </div>
             </div>
-          </section>';<?php
+          </section><?php
         } else if ($_GET['id'] == 2)
         {
           ?>
           <section class="py-5 text-center container">
           <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-              <h1 class="fw-light">Выберите сложность заданий</h1>
+              <h1 class="fw-light">Выберите вид заданий</h1>
       
               <p>
-                <a href="homework/homework_ch.php" class="btn btn-primary my-2">Лёгкие</a>
-                <a href="homework/homework_old.php" class="btn btn-secondary my-2">Сложные</a>
+                <a href="crosswords.php" class="btn btn-primary my-2">Кроссворды</a>
+                <a href="tests.php" class="btn btn-secondary my-2">Тесты</a>
               </p>
             </div>
           </div>
-        </section>';<?php
+        </section><?php
 
         } else if ($_GET['id'] == 3)
         {
@@ -80,12 +80,12 @@
               <h1 class="fw-light">Выберите желаемый плейлист</h1>
       
               <p>
-                <a href="https://www.youtube.com/playlist?list=PL8HKlPrHZTL7etTD5DT5y6kpwJ9xwek26" class="btn btn-primary my-2">Космос для детей и подростков</a>
-                <a href="https://www.youtube.com/playlist?list=PL8HKlPrHZTL7HsEn_2OHRD90JSaj3sq75" class="btn btn-secondary my-2">Космос для взрослых</a>
+                <a href="videos_ch.php" class="btn btn-primary my-2">Космос для детей и подростков</a>
+                <a href="videos_ol.php" class="btn btn-secondary my-2">Космос для взрослых</a>
               </p>
             </div>
           </div>
-        </section>'; <?php
+        </section><?php
         } else 
         {
             ?>

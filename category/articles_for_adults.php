@@ -6,7 +6,6 @@
     <title>Блог</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
-    <link rel="stylesheet" href="../css/style.css">
 
 
     
@@ -58,29 +57,28 @@
       {
           ?>
 
-          <div class="album py-5 bg-light">
+<div class="album bg-light dec" style="padding: 10px">
               <div class="container">
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                   <div class="col">
-                    <div class="card shadow-sm">
-                      
+                      <div class="card shadow-sm">
+                          
 
-                      <div class="card-body">
-                      <h2 class="card-text"><?php 
+                          <div class="card-body">
+                          <h2 class="card-text" style="justify-content: center;"><?php 
                           $result->data_seek($j);
-                          echo '<h5>' .htmlspecialchars($result->fetch_assoc()['title']) . '</h5><br>'; 
+                          echo '<h2 style="text-align: center;">' . $result->fetch_assoc()['title'] . '</h2><br>'; 
                           $result->data_seek($j);
-                          echo '<p>' .htmlspecialchars($result->fetch_assoc()['description']) . '</p><br>';?></h2>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                          <a class="btn btn-secondary" href="article_ol.php?id=<?php
+                          echo '<p>' . $result->fetch_assoc()['description'] . '</p><br>';?></h2>
+                          <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                              <a class="btn btn-secondary" href="article_ol.php?id=<?php
                               $result->data_seek($j);
-                              echo $result->fetch_assoc()['id'] ?>" role="button">Подробнее &raquo;</a>
+                              echo $result->fetch_assoc()['id']; ?>" role="button">Подробнее &raquo;</a>
+                              </div>
                           </div>
-                        </div>
+                          </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
