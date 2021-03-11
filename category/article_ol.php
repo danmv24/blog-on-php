@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Space</title>
+    <title>КосмосX</title>
+    <style>
+    img {
+        margin-left: 375px;
+        height: 500px;
+    }
+</style>
 </head>
 <body>
 
@@ -23,10 +29,22 @@
     
         for ($j = 0 ; $j < $rows ; ++$j)
         {
-            $result->data_seek($j);
-            echo '<h2 style="text-align: center;">' . $result->fetch_assoc()['title'] . '</h2><br>';
-            $result->data_seek($j);
-            echo '<p style="font-size:20px; hyphens: auto; margin:10px">' . $result->fetch_assoc()['text'] . '</p><br>';
+            ?>
+            <h2 style="text-align: center;"><?php 
+                                                $result->data_seek($j);
+                                                echo '<h2 style="text-align: center;">' . $result->fetch_assoc()['title'] . '<h2>'; ?></h2><br>
+
+
+            <img src="../img/<?php 
+                            $result->data_seek($j);
+                            echo $result->fetch_assoc()['img']; ?>">
+
+            <p><?php 
+                    $result->data_seek($j);
+                    echo '<p style="font-size:20px; hyphens: auto; margin:10px;">' . $result->fetch_assoc()['text'] . '<p>'; ?></p><br>
+
+
+            <?php
         }
     
         $result->close();

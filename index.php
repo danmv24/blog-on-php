@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Блог</title>
+        <title>КосмосX</title>
 
         <link
             rel="canonical"
@@ -26,6 +26,7 @@
                     font-size: 3.5rem;
                 }
             }
+            
         </style>
 
         <link href="css/carousel.css" rel="stylesheet" />
@@ -34,7 +35,9 @@
         <header>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand d-flex align-items-center" href="/">Блог</a>
+                <a href="/index.php" class="navbar-brand d-flex align-items-center">
+                    <strong>КосмосX</strong>
+                </a>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -166,6 +169,7 @@
                     <span class="visually-hidden">Next</span>
                 </a>
             </div>
+             
 
             
 
@@ -183,6 +187,7 @@
                             for ($j = 0 ; $j < $rows ; ++$j)
                             {
                                 ?>
+                                
                                
                                     <div class="container marketing center">
                                     <div class="row">
